@@ -23,7 +23,7 @@ domain=DOMAIN_HERE
 log=$HOME/.cf-dns-update.log
 date +"%F %T" >> $log
 
-WAN_IP=`curl -s http://icanhazip.com`
+WAN_IP=`curl -s http://canhazip.com`
 if [ -f $HOME/.wan_ip-cf.txt ]; then
         OLD_WAN_IP=`cat $HOME/.wan_ip-cf.txt`
 else
